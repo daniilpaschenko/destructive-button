@@ -2,15 +2,22 @@ import 'package:flutter/material.dart';
 
 /// counter
 class StatItem extends StatelessWidget {
-  const StatItem({super.key, required this.label, required this.value});
+  const StatItem({
+    super.key,
+    required this.label,
+    required this.value,
+    this.alignment = CrossAxisAlignment.start,
+  });
 
   final String label;
   final String value;
 
+  final CrossAxisAlignment alignment;
+
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: alignment,
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Text(

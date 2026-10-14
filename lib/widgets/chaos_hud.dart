@@ -18,7 +18,7 @@ class ChaosHud extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Expanded(
           child: Container(
@@ -29,10 +29,14 @@ class ChaosHud extends StatelessWidget {
               border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 StatItem(label: 'Нажатий', value: '$pressCount'),
-                const SizedBox(width: 18),
-                StatItem(label: 'Эмодзи', value: '$emojiCount'),
+                StatItem(
+                  label: 'Эмодзи',
+                  value: '$emojiCount',
+                  alignment: CrossAxisAlignment.end,
+                ),
               ],
             ),
           ),
