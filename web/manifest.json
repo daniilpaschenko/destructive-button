@@ -1,11 +1,11 @@
 {
-    "name": "destructive_button",
-    "short_name": "destructive_button",
+    "name": "Destructive Button",
+    "short_name": "Destructive Button",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0B0F14",
+    "theme_color": "#E53935",
+    "description": "Destructive Button — a joke app whose Clean screen button only makes the mess worse.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
